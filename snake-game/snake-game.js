@@ -1,3 +1,5 @@
+// credits for youtube channel Programador BR 
+
 window.onload = function()
 {
     var stage = document.getElementById('stage');
