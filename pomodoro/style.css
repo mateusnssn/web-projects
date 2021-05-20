@@ -2,12 +2,18 @@
 
 :root{
     --main-color: #7014E8;
+
+    --main-color-select: #8028F6;
+    --main-color-no-select: #9056FA;
+
     --second-color: #5002C6;
 
     --pause-color: #4000B5;
 }
 
 *{
+    font-size: large;
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -56,46 +62,77 @@ main {
 
 }
 
-main span.time{
+main span.init{
     width: 40vw;
     /* height: 30vh; */
 
     margin-top: 10vh;
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
 
     color: whitesmoke;
 
     font-size: 7vw;
     text-align: center;
 
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    border-radius: .25rem;
+
+}
+main span.time {
     background-color: var(--second-color);
 
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
-    border-radius: .25rem;
-
 }
 
-main span.pause{
+main span.pause {
+    background-color: var(--pause-color);
+}
+
+
+
+
+
+
+
+
+main div#indicators {
+    margin-bottom: 2vh;
 
 
     width: 40vw;
-    /* height: 30vh; */
 
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+    padding: 3px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1vh;
+    
+
+}
+
+main div#indicators button{
+    margin: 5px;
+    padding: 4px;
 
     color: whitesmoke;
+    background: var(--main-color-no-select);
 
-    font-size: 7vw;
-    text-align: center;
-
-    background-color: var(--pause-color);
-
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    justify-content: space-around;
     border-radius: .25rem;
 
-    
+
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
 }
+
+main div#indicators button.select {
+    background: var(--main-color-select);
+}
+
 
 
 /*///////////controller////////*/
