@@ -3,6 +3,8 @@
 :root{
     --main-color: #7014E8;
     --second-color: #5002C6;
+
+    --pause-color: #4000B5;
 }
 
 *{
@@ -56,7 +58,7 @@ main {
 
 main span.time{
     width: 40vw;
-    height: 30vh;
+    /* height: 30vh; */
 
     margin-top: 10vh;
     margin-bottom: 5vh;
@@ -71,6 +73,28 @@ main span.time{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
     border-radius: .25rem;
 
+}
+
+main span.pause{
+
+
+    width: 40vw;
+    /* height: 30vh; */
+
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+
+    color: whitesmoke;
+
+    font-size: 7vw;
+    text-align: center;
+
+    background-color: var(--pause-color);
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    border-radius: .25rem;
+
+    
 }
 
 
