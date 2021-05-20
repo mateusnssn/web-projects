@@ -1,5 +1,4 @@
 
-var hour = 0;
 var minute = 0;
 var second = 0;
 
@@ -32,11 +31,6 @@ function timer(){
         
     }
 
-    if(minute == 60){
-        minute = 0;
-        hour++;
-    }
-
-    var format = `${(hour < 10 ? '0' + hour : hour)}:${(minute < 10 ? '0' + minute : minute)}:${(second < 10 ? '0' + second : second)}`;
+    var format = `${(minute < 10 ? '0' + minute : minute)}:${(second < 10 ? '0' + second : second)}`;
     document.getElementById(`clock`).innerHTML = format;
 }
