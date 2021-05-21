@@ -40,7 +40,7 @@ function timer(){
     second--;
 
     if(second == -1){
-        second = 60;
+        second = 59;
         minute--;
 
         
