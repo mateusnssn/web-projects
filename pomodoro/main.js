@@ -138,7 +138,8 @@ function relay(command_type, c){
     
             minute = step_data.pomodoro.time;
             second = 0;
-            counter = 0;
+
+            pause();
     
             pomodoro_tag.classList.add("select");
             long_break_tag.classList.remove("select");
@@ -151,7 +152,9 @@ function relay(command_type, c){
     
             minute = step_data.short_break.time;
             second = 0;
-            counter = 0;
+
+            pause();
+
     
             pomodoro_tag.classList.remove("select");
             long_break_tag.classList.remove("select");
@@ -167,7 +170,8 @@ function relay(command_type, c){
     
             minute = step_data.long_break.time;
             second = 0;
-            counter = 0;
+
+            pause();
     
             pomodoro_tag.classList.remove("select");
             long_break_tag.classList.add("select");
