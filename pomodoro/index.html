@@ -19,9 +19,9 @@
     <main class="pause">
         <span id="clock" class="init pause">25:00</span>
         <div id="indicators">
-            <button id="pomodoro_tag" class="select">Pomodoro</button>
-            <button id="short_break_tag">Short break</button>
-            <button id="long_break_tag">Long break</button>
+            <button onclick="def_pomodoro()" id="pomodoro_tag" class="select">Pomodoro</button>
+            <button onclick="def_short_break()" id="short_break_tag">Short break</button>
+            <button onclick="def_long_break()" id="long_break_tag">Long break</button>
         </div>
         <button id="controller" onclick="start()">Start</button>
     </main>
