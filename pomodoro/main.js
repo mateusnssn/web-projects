@@ -61,23 +61,10 @@ let counter = 0;
 
 // tags
 let pomodoro_tag = document.getElementsByName("pomodoro_tag");
-let short_break_tag = document.getElementsByName("short_break_tag");
-let long_break_tag = document.getElementsByName("long_break_tag");
+let short_break_tag = document.getElementById("short_break_tag");
+let long_break_tag = document.getElementById("long_break_tag");
 
 
 function relay(){
-
-
-    console.log("oiii");
-    if(step == step_data.short_break.type){
-        minute = 5;
-    }if(step == step_data.long_break.type){
-        minute = 15;
-    }if(step == step_data.pomodoro.type){
-        minute = 25;
-    }
-
- 
-
-
+    
 }
