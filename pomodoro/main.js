@@ -13,7 +13,8 @@ let controllerButton = document.getElementById(`controller`);
 function start(){
     chronometer = setInterval(() => {
         timer();
-        if(minute == 0){
+        if(minute == 0 && second == 0){
+            pause();
             relay();
         }
         
@@ -39,7 +40,7 @@ function timer(){
     second--;
 
     if(second == -1){
-        second = 59;
+        second = 60;
         minute--;
 
         
@@ -78,6 +79,8 @@ function relay(){
         long_break_tag.classList.add("select");
 
         console.log(1)
+
+        new Audio("./assets/alarm.mp3").play();
         return;
 
     }if(step == step_data.pomodoro.type && counter < 3){
@@ -90,6 +93,8 @@ function relay(){
         pomodoro_tag.classList.remove("select");
         short_break_tag.classList.add("select");
         console.log(2)
+        new Audio("./assets/alarm.mp3").play();
+
         return;
     }
 
@@ -103,6 +108,7 @@ function relay(){
         pomodoro_tag.classList.add("select");
 
         console.log(3)
+        new Audio("./assets/alarm.mp3").play();
         return;
 
     }if(step == step_data.long_break.type){
@@ -115,6 +121,7 @@ function relay(){
         pomodoro_tag.classList.add("select");
 
         console.log(4)
+        new Audio("./assets/alarm.mp3").play();
         return;
     }
 
