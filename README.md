@@ -1,5 +1,5 @@
 # javascript-projects
 
-`snake game`: [`./snake-game/`](./snake-game/) : [page](https://mateusnssp.github.io/javascript-projects/snake-game/)
+:unicorn_face: Here are some random and simple web projects I create to keep up to date with official documentations. 
 
-`pomodoro` : [`./pomodoro/`](./pomodoro/) : [page](https://mateusnssp.github.io/javascript-projects/pomodoro/)
+Demonstration: [`web-projects`](https://mateusnssn.github.io/web-projects/)

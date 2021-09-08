@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+:root{
+      --main-color: #0AE85F;
+      --background-color: #E6E6E6;
+}
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+
+html{
+      background-color: var(--background-color);
+}
+
+
+
+
+
